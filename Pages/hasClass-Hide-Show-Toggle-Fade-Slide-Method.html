@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hasClass, Hide/Show/Toggle, fade, slide Method</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      section {
+        margin: 50px 0 20px 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      #dummy-text, #dummy-text1, #dummy-text2{
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 5px solid #ccc;
+        width: 100%;
+      }
+
+      #hasClassBtn,
+      #hideBtn,
+      #showBtn,
+      #toggleBtn,
+      #fadeInBtn,
+      #fadeOutBtn,
+      #fadeToggleBtn,
+      #fadeToBtn, #slideDownBtn,
+#slideUpBtn,
+#slideToggleBtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      #test {
+        background-color: #4caf50;
+      }
+      #test1 {
+        color: #4caf50;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div>
+        <h1>hasClass(), Hide(), Show(), Toggle() Method</h1>
+        <div id="dummy-text" class="test abc">
+          <p>
+            <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Nam
+            quaerat atque consequatur
+          </p>
+        </div>
+        <button id="hasClassBtn">hasClass</button>
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <button id="toggleBtn">Toggle</button>
+      </div>
+    </section>
+
+    <section>
+      <section>
+        <div>
+          <h1>fadeIn(), fadeOut(), fadeToggle(), fadeTo() Method</h1>
+          <div id="dummy-text1" class="test abc">
+            <p>
+              <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit.
+              Nam quaerat atque consequatur
+            </p>
+          </div>
+          <button id="fadeInBtn">fadeIn</button>
+          <button id="fadeOutBtn">fadeOut</button>
+          <button id="fadeToggleBtn">fadeToggle</button>
+          <button id="fadeToBtn">fadeTo</button>
+        </div>
+      </section>
+    </section>
+      <section>
+        <div>
+          <h1>slideIn(), slideOut(), slideToggle() Method</h1>
+          <div id="dummy-text2" class="test abc">
+            <p>
+              <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit.
+              Nam quaerat atque consequatur
+            </p>
+          </div>
+          <button id="slideUpBtn">slideUp</button>
+          <button id="slideDownBtn">slideDown</button>
+          <button id="slideToggleBtn">slideToggle</button>
+          
+        </div>
+      </section>
+    </section>
+
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/hasClass-Hide-Show-Toggle-Fade-Slide-Method.js"></script>
+  </body>
+</html>

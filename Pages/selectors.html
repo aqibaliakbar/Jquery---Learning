@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <title>Selectors - Jquery</title>
+  </head>
+  <body>
+    <div class="benefits">
+      <ul id="list">
+        <li class="test">Blue</li>
+        <li>Red</li>
+        <li>Green</li>
+        <li class="test">Yellow</li>
+        <li>Orange</li>
+      </ul>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // $("#list").css("color", "green");
+        // $(".test").css("color", "green");
+        $("li").css("border", "2px solid green");
+
+				// Mouse Events
+        $(".benefits").click(function () {
+          $(".benefits").css("background-color", "gray");
+        });
+        $(".benefits").dblclick(function () {
+          $(".benefits").css("background-color", "black", );
+					$("li").css("color", "white");
+        });
+        $(".benefits").contextmenu(function () {
+          $(".benefits").css("background-color", "red");
+        });
+        $(".benefits").mouseenter(function () {
+          $(".benefits").css("background-color", "tan");
+        });
+        $(".benefits").mouseleave(function () {
+          $(".benefits").css("background-color", "white");
+					$("li").css("color", "black");
+        });
+
+				// Key Events
+
+				$("body").keydown(function (){
+					$(this).css("background-color", "blue");
+				})
+				$("body").keyup(function (){
+					$(this).css("background-color", "black");
+					$("li").css("color", "green");
+				})
+      });
+    </script>
+  </body>
+</html>

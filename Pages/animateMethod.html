@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Method</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      section {
+        margin: 50px 0 20px 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+				z-index: 3;
+				
+      }
+      #dummy-text {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 5px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 150px;
+					position: relative;
+					z-index: 2;
+			
+      }
+
+      #animateBtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+				z-index: 5;
+			
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="dummy-text">Hello!</div>
+      </div>
+      <button id="animateBtn">Animate</button>
+			<script src="/scripts/jquery.js"></script>
+			<script src="/scripts/animateMethod.js"></script>
+    </section>
+  </body>
+</html>

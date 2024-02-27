@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/scripts/jquery.js"></script>
+  </head>
+  <body>
+    <h1>Jquery</h1>
+    <div class="benefits">
+      <h2>Benefits</h2>
+      <ul>
+        <li><p>Browser Independent</p></li>
+        <li><p>Increase Coding Skills</p></li>
+      </ul>
+    </div>
+    <div class="benefits">
+      <h2>Jquery Main Statement Script</h2>
+      <p>
+        $(document).ready(function(
+        <br />
+        Further Code
+
+        <br />
+        ) { });
+        <br />
+        or
+        <br />
+        $(function() {})
+      </p>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+				// innerHtml shorthand in jquery .html()
+				let a = $('.benefits').html();
+				console.log(a)
+			});
+    </script>
+  </body>
+</html>

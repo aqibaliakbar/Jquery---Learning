@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wrap, UnWrap, WrapAll, InnerWrap Methods</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      section {
+        margin: 50px 0 20px 0;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .dummy-text, .dummy-text1 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+
+			#wrapBtn, #unwrapBtn, #wrapAllBtn, #wrapInnerBtn {
+				 background-color: #4caf50;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+			}
+
+			#test{
+				background-color: #4caf50;
+			}
+			#test1{
+				color: #4caf50;
+			}
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div>
+        <h1>wrap(), unwrap() Methods</h1>
+        <p>
+          Wrap a element into another element like wrap h1 tag into div tag and
+          unwrap is opposite
+        </p>
+
+        <div class="dummy-text">
+          <p>
+            <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Nam
+            quaerat atque consequatur
+          </p>
+        </div>
+        <button id="wrapBtn">Wrap</button>
+        <button id="unwrapBtn">UnWrap</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1>wrapAll() wrapInner() Methods</h1>
+        <p>
+        Wrap All elements into a single parent element where wrapInner wrap inner text with the provide tag or element
+        </p>
+       
+
+        <div class="dummy-text1">
+          <p>
+            <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Nam
+            quaerat atque consequatur
+          </p>
+          <p>
+            <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Nam
+            quaerat atque consequatur
+          </p>
+        </div>
+        <button id="wrapAllBtn">Wrap All</button>
+        <button id="wrapInnerBtn">Wrap Inner</button>
+      </div>
+    </section>
+
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/wrapUnwrapWrapAll&WrapInnerMethods.js"></script>
+  </body>
+</html>
